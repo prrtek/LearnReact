@@ -6,8 +6,7 @@ function App() {
     setCount(count + 1);
   }
   function decrement() {
-    setCount((count) => count - 1);
-    setCount((count) => count - 1);
+    count > 0 ? setCount((count) => count - 1) : alert("Count is already 0");
   }
   return (
     <>
